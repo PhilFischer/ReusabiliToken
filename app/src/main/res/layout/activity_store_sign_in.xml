@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="48dp"
         android:text="Name:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="56dp"
         android:text="ID:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
@@ -31,69 +31,74 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:text="Private Key:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/idView" />
 
     <TextView
         android:id="@+id/publicKeyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="Public Key:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/privateKeyTextView" />
 
     <EditText
         android:id="@+id/nameView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/nameTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/nameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameTextView" />
 
     <EditText
         android:id="@+id/idView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="72dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/idTextView"
-        app:layout_constraintTop_toBottomOf="@+id/nameView" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/idTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idTextView" />
 
     <TextView
         android:id="@+id/privateKeyView"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/privateKeyTextView"
-        app:layout_constraintTop_toBottomOf="@+id/idView" />
+        android:layout_marginStart="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/privateKeyTextView"
+        app:layout_constraintStart_toEndOf="@+id/privateKeyTextView" />
 
     <TextView
         android:id="@+id/publicKeyView"
         android:layout_width="wrap_content"
         android:layout_height="23dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintStart_toEndOf="@+id/publicKeyTextView"
-        app:layout_constraintTop_toBottomOf="@+id/privateKeyView" />
+        android:layout_marginStart="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/publicKeyTextView"
+        app:layout_constraintStart_toEndOf="@+id/publicKeyTextView" />
 
     <Button
         android:id="@+id/signInButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="344dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
         android:onClick="signIn"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
         android:text="@string/sign_in_button"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publicKeyTextView" />
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,275 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+MERGED from [com.google.android.gms:play-services-vision:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.8.0.aar/2e104cc1d93bcdfe6d284659f77adafc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/philipp/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5d04f554ac25300f0028d35132515059/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-vision-common:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.8.0.aar/88b43b075ddeb1f813f61d503a60d4a6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/35282b91439281c7b14f3e487535a498/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.8.0.aar/f585fde2f52b17e83742121dd0cb3afa/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/cb3b29893fd7ba60727dbe44ad5f350c/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/e84f3b5a11521fc564533b671756c943/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.8.0.aar/84b84d228dc228bb1e31355df529f7de/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/96a6ebdb1620bf2800007b86fd1fab7d/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:1-37:12
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:8:22-69
+uses-permission#android.permission.CAMERA
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:10:22-78
+application
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:12:5-35:19
+MERGED from [com.google.android.gms:play-services-vision:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.8.0.aar/2e104cc1d93bcdfe6d284659f77adafc/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.8.0.aar/2e104cc1d93bcdfe6d284659f77adafc/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/philipp/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5d04f554ac25300f0028d35132515059/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/philipp/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5d04f554ac25300f0028d35132515059/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.8.0.aar/88b43b075ddeb1f813f61d503a60d4a6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.8.0.aar/88b43b075ddeb1f813f61d503a60d4a6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/35282b91439281c7b14f3e487535a498/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/35282b91439281c7b14f3e487535a498/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.8.0.aar/f585fde2f52b17e83742121dd0cb3afa/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.8.0.aar/f585fde2f52b17e83742121dd0cb3afa/AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/cb3b29893fd7ba60727dbe44ad5f350c/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/cb3b29893fd7ba60727dbe44ad5f350c/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/e84f3b5a11521fc564533b671756c943/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/e84f3b5a11521fc564533b671756c943/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.8.0.aar/84b84d228dc228bb1e31355df529f7de/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.8.0.aar/84b84d228dc228bb1e31355df529f7de/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/96a6ebdb1620bf2800007b86fd1fab7d/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/96a6ebdb1620bf2800007b86fd1fab7d/AndroidManifest.xml:5:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:17:9-40
+activity#com.example.philipp.cashierapp.MainActivity
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:18:9-24:20
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:18:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.example.philipp.cashierapp.barcode.BarcodeCaptureActivity
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:25:9-27:66
+	android:theme
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:27:13-63
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:26:13-59
+activity#com.example.philipp.cashierapp.SignedStore
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:28:9-30:57
+	android:parentActivityName
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:30:13-55
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:29:13-40
+activity#com.example.philipp.cashierapp.StoreSignIn
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:31:9-33:57
+	android:parentActivityName
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:33:13-55
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:32:13-40
+activity#com.example.philipp.cashierapp.StoreLogIn
+ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:34:9-48
+	android:name
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml:34:19-45
+uses-sdk
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-vision:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.8.0.aar/2e104cc1d93bcdfe6d284659f77adafc/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.8.0.aar/2e104cc1d93bcdfe6d284659f77adafc/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/philipp/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5d04f554ac25300f0028d35132515059/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/philipp/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5d04f554ac25300f0028d35132515059/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-vision-common:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.8.0.aar/88b43b075ddeb1f813f61d503a60d4a6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.8.0.aar/88b43b075ddeb1f813f61d503a60d4a6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/35282b91439281c7b14f3e487535a498/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/35282b91439281c7b14f3e487535a498/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.8.0.aar/f585fde2f52b17e83742121dd0cb3afa/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.8.0.aar/f585fde2f52b17e83742121dd0cb3afa/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/cb3b29893fd7ba60727dbe44ad5f350c/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/cb3b29893fd7ba60727dbe44ad5f350c/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/e84f3b5a11521fc564533b671756c943/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/e84f3b5a11521fc564533b671756c943/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.8.0.aar/84b84d228dc228bb1e31355df529f7de/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.8.0.aar/84b84d228dc228bb1e31355df529f7de/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/96a6ebdb1620bf2800007b86fd1fab7d/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/96a6ebdb1620bf2800007b86fd1fab7d/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/philipp/AndroidStudioProjects/CashierApp/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/14980610cd26230d6bd06445a4e3fc2d/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/57b94d8745d0e00238a3d253aa5e24d6/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/bc07b6522e1866ee860a382793cc8452/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/ebf044235c5523d052038e4c894d4818/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/91a488de411b1ce1b177b177a0585b0f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/6f391dfe3bd248e5d334537a7cf0d89f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b484f51255bef2a7d8260e9542c6a2d4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2517be3f72bd40acaa5f449b0004e7e6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/72e41be43882845ab2d0b7e7832fa1b2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4d431e21d0629ad953c6e58df74c0a5d/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5066d4a2f551c0d84a2fb6fa4d5a062f/AndroidManifest.xml:27:13-51
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/8861ffd78f4f7bf564d0748c380c57d1/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/6f5f9dc93d7f75de02830fb4fc26858f/AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/philipp/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/d7b35178e05b324e2f54a6a206da67ce/AndroidManifest.xml:26:13-58

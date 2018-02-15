@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/cortesis/Documents/BIOTS/ReusabiliToken/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/cortesis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/18fc53d9a97761fcb204b5dd048c841e/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/philipp/AndroidStudioProjects/CashierApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/philipp/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8487e871c8db170fbf1c5fd09c418812/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

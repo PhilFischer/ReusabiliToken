@@ -23,21 +23,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void storeLogIn(View view) {
-        StoreDatabase storeDatabase = StoreDatabase.getInstance();
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String id = editText.getText().toString();
-        if((storeDatabase.getPublicKey(Long.parseLong(id, 10)) !=
-                storeDatabase.getPublicKey(0)
-                && Integer.parseInt(id) != 0)
-                || Integer.parseInt(id) == 3) {
-            Intent intent = new Intent(this, SignedStore.class);
-            intent.putExtra(STORE_EXTRA_ID, id);
-            startActivity(intent);
+        try {
+            StoreDatabase storeDatabase = StoreDatabase.getInstance();
+            EditText editText = (EditText) findViewById(R.id.editText);
+            String id = editText.getText().toString();
+            if ((storeDatabase.getPublicKey(Long.parseLong(id, 10)) !=
+                    storeDatabase.getPublicKey(0)
+                    && Integer.parseInt(id) != 0)
+                    || Integer.parseInt(id) == 3) {
+                Intent intent = new Intent(this, SignedStore.class);
+                intent.putExtra(STORE_EXTRA_ID, id);
+                startActivity(intent);
+            } else {
+                TextView errorBox = (TextView) findViewById(R.id.errorBox);
+                errorBox.setText("Error: Unknown id");
+                editText.setText("");
+            }
         }
-        else {
+        catch(Exception e) {
             TextView errorBox = (TextView) findViewById(R.id.errorBox);
             errorBox.setText("Error: Unknown id");
-            editText.setText("");
         }
     }
 

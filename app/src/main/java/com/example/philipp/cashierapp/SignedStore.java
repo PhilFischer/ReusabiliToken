@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
@@ -71,13 +72,14 @@ public class SignedStore extends AppCompatActivity {
     }
 
     public void scanClaim(View view) {
-        Intent intent = new Intent(getApplicationContext(), BarcodeCaptureActivity.class);
-        ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setVisibility(View.INVISIBLE);
-        startActivityForResult(intent, BARCODE_READER_REQUEST_CODE);
+            Intent intent = new Intent(getApplicationContext(), BarcodeCaptureActivity.class);
+            ImageView imageView = (ImageView) findViewById(R.id.imageView);
+            imageView.setVisibility(View.INVISIBLE);
+            startActivityForResult(intent, BARCODE_READER_REQUEST_CODE);
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        try {
         String barcode_return = "0";
         if (requestCode == BARCODE_READER_REQUEST_CODE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
@@ -92,6 +94,11 @@ public class SignedStore extends AppCompatActivity {
             super.onActivityResult(requestCode, resultCode, data);
 
         recieveClaim(barcode_return);
+        }
+        catch(Exception e)
+        {
+            Toast.makeText(getApplicationContext(), "Something went wrong or false QR-Code scanned!", Toast.LENGTH_LONG).show();
+        }
     }
 
     protected void recieveClaim(String barcode_return) {
