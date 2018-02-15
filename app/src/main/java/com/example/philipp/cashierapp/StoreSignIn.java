@@ -32,16 +32,24 @@ public class StoreSignIn extends AppCompatActivity {
         KeyPairGenerator keyGen;
         try  {
             keyGen = KeyPairGenerator.getInstance("DSA");
-            random = SecureRandom.getInstance("sharp1ing");
-            keyGen.initialize(512, random);
+            keyGen.initialize(512);
             KeyPair keyPair = keyGen.generateKeyPair();
             privateKey = (PrivateKey) keyPair.getPrivate();
-            publicKey = (PublicKey) keyPair.getPublic();
-        }
-        catch(NoSuchAlgorithmException noSuchAlgorithmException){}
 
-        TextView tv = (TextView) findViewById(R.id.privateKeyView);
-        tv.setText(privateKey.getClass().toString());
+            final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, 0);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("KEY2", privateKey.getEncoded().toString());
+            editor.commit();
+
+            TextView tv = (TextView) findViewById(R.id.privateKeyView);
+            tv.setText(privateKey.getEncoded().toString());
+
+            publicKey = (PublicKey) keyPair.getPublic();
+            TextView tv2 = (TextView) findViewById(R.id.publicKeyView);
+            tv2.setText(publicKey.getEncoded().toString());
+        }
+        catch(NoSuchAlgorithmException noSuchAlgorithmException){        }
+
     }
 
     public void signIn(View view) {
@@ -57,8 +65,7 @@ public class StoreSignIn extends AppCompatActivity {
         final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putLong("KEY1", id);
-        //editor.putString("KEY2", privateKey.toString());
-
+        //editor.putString("KEY2", privateKey.getEncoded().toString());
         editor.commit();
 
 
