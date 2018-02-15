@@ -23,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".barcode.BarcodeCaptureActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".SignedStore" />
         <activity android:name=".StoreSignIn" />
         <activity android:name=".StoreLogIn" />

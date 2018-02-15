@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         if((storeDatabase.getPublicKey(Long.parseLong(id, 10)) !=
                 storeDatabase.getPublicKey(0)
                 && Integer.parseInt(id) != 0)
-                || Integer.parseInt(id) == 214365) {
+                || Integer.parseInt(id) == 3) {
             Intent intent = new Intent(this, SignedStore.class);
             intent.putExtra(STORE_EXTRA_ID, id);
             startActivity(intent);

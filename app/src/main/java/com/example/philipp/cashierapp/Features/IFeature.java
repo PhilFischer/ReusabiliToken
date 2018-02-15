@@ -22,27 +22,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations;
-
-import com.example.philipp.cashierapp.operations.actions.IAction;
-import com.example.philipp.cashierapp.IAddress;
+package com.example.philipp.cashierapp.Features;
 
 /**
- * Represents the claim to a performed action and its proof.
- * I.e. the action can be a transformed value transaction.
+ *  Representing a Feature of a Token. 
+ * The sum of features make up a Token.
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public interface IClaim {
+public interface IFeature {
     
-    /**
-     * Obtain the performed Action Object.
-     * @return 
-     */
-    IAction getAction();
-    /**
-     * Get Proof for the performed Action.
-     * @return 
-     */
-    IActionProof getProof();
+    FeatureType getFeatureType();
+    boolean isSet();
     
 }

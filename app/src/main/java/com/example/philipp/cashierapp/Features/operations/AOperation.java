@@ -22,16 +22,29 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Features.operations;
+
+import com.example.philipp.cashierapp.Features.FeatureType;
+import com.example.philipp.cashierapp.Features.IOperation;
+import com.example.philipp.cashierapp.Repository.IRepository;
 
 /**
- *  Representing a Feature of a Token. 
- * The sum of features make up a Token.
+ * Abstract Class for operations. Requires children to store a repository.
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public interface IFeature {
+public abstract class AOperation implements IOperation{
     
-    FeatureType getFeatureType();
-    boolean isSet();
+    protected IRepository repo;
+
+    public AOperation(IRepository repo) {
+        this.repo = repo;
+    }
+    
+    @Override
+    public FeatureType getFeatureType() {
+        return FeatureType.OPERATION;
+    }
+    
+    
     
 }

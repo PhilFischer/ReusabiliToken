@@ -22,15 +22,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Repository;
 
-import com.example.philipp.cashierapp.IFeature;
-import com.example.philipp.cashierapp.IOperation;
-import com.example.philipp.cashierapp.IUnderlying;
-import com.example.philipp.cashierapp.operations.IOperationProof;
-import com.example.philipp.cashierapp.operations.actions.IAction;
-import com.example.philipp.cashierapp.IProperty;
-import com.example.philipp.cashierapp.IToken;
+import com.example.philipp.cashierapp.Features.IFeature;
+import com.example.philipp.cashierapp.Features.IOperation;
+import com.example.philipp.cashierapp.Features.IUnderlying;
+import com.example.philipp.cashierapp.Features.operations.IOperationProof;
+import com.example.philipp.cashierapp.Features.operations.actions.IAction;
+import com.example.philipp.cashierapp.Features.properties.IProperty;
+import com.example.philipp.cashierapp.Token.IToken;
 import com.example.philipp.cashierapp.IAddress;
 import java.util.Collection;
 import java.util.Map;

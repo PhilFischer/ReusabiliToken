@@ -8,7 +8,7 @@ import java.security.PublicKey;
 import java.util.AbstractMap;
 import java.util.HashMap;
 
-import com.example.philipp.cashierapp.IToken;
+import com.example.philipp.cashierapp.Token.IToken;
 
 /**
  * @brief A Database containing the IDs and public keys of all the stores

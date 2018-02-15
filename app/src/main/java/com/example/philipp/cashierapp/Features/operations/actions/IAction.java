@@ -22,7 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations.actions;
+package com.example.philipp.cashierapp.Features.operations.actions;
 
 /**
  * 

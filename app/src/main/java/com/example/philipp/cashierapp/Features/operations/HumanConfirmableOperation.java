@@ -1,19 +1,19 @@
-package com.example.philipp.cashierapp.operations;
+package com.example.philipp.cashierapp.Features.operations;
 
 import java.security.PublicKey;
 import java.security.Signature;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.philipp.cashierapp.operations.actions.AHumanConfirmableAction;
-import com.example.philipp.cashierapp.operations.actions.BringOwnCupAction;
-import com.example.philipp.cashierapp.operations.actions.BringOwnPlateAction;
-import com.example.philipp.cashierapp.operations.actions.EActionType;
-import com.example.philipp.cashierapp.operations.actions.IAction;
-import com.example.philipp.cashierapp.IRepository;
-import com.example.philipp.cashierapp.IToken;
+import com.example.philipp.cashierapp.Features.operations.actions.AHumanConfirmableAction;
+import com.example.philipp.cashierapp.Features.operations.actions.BringOwnCupAction;
+import com.example.philipp.cashierapp.Features.operations.actions.BringOwnPlateAction;
+import com.example.philipp.cashierapp.Features.operations.actions.EActionType;
+import com.example.philipp.cashierapp.Features.operations.actions.IAction;
+import com.example.philipp.cashierapp.Repository.IRepository;
+import com.example.philipp.cashierapp.Token.IToken;
 import com.example.philipp.cashierapp.StoreDatabase;
-import com.example.philipp.cashierapp.operations.AOperation;
+import com.example.philipp.cashierapp.Features.operations.AOperation;
 
 /**
  * Created by Tobias on 14.02.2018.

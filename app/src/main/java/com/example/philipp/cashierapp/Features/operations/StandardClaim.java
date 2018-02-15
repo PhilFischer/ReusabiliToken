@@ -22,76 +22,39 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations.actions;
+package com.example.philipp.cashierapp.Features.operations;
 
-import com.example.philipp.cashierapp.IAddress;
-import com.example.philipp.cashierapp.IToken;
+import com.example.philipp.cashierapp.Features.operations.actions.IAction;
+import com.example.philipp.cashierapp.Features.operations.IClaim;
+import com.example.philipp.cashierapp.Features.operations.IActionProof;
+
 
 /**
  *
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public class TransactionAction implements IAction{
-
-    IAddress from;
-    IAddress to;
-    int value;
-    IToken token;
-
-    public TransactionAction() {
-    }
+public class StandardClaim implements IClaim{
 
     
+    IAction action; // performed action
+    IActionProof proof; // proof for action
+
+    public StandardClaim(IAction action, IActionProof proof) {
+        this.action = action;
+        this.proof = proof;
+    }
     
-    public TransactionAction(IAddress from, IAddress to, int value) {
-        this();
-        this.from = from;
-        this.to = to;
-        this.value = value;
-    }
-
     
-  
-    /*
-    GETTER & SETTER
-     */
-    public void setToken(IToken token) {
-        this.token = token;
-    }
-      public IToken getToken() {  
-        return token;
-    }
-    public IAddress getFrom() {
-        return from;
-    }
-
-    public void setFrom(IAddress from) {
-        this.from = from;
-    }
-
-    public IAddress getTo() {
-        return to;
-    }
-
-    public void setTo(IAddress to) {
-        this.to = to;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
+    
+    @Override
+    public IAction getAction() {
+       return this.action;
     }
 
     @Override
-    public EActionType getType() {
-        return  EActionType.TRANSACTION;
+    public IActionProof getProof() {
+        return this.proof;
     }
-    
-    
-  
     
     
     

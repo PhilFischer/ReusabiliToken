@@ -3,8 +3,8 @@ package com.example.philipp.cashierapp.Tests;
 import java.util.Collection;
 import java.util.Map;
 
-import com.example.philipp.cashierapp.operations.IClaim;
-import com.example.philipp.cashierapp.IToken;
+import com.example.philipp.cashierapp.Features.operations.IClaim;
+import com.example.philipp.cashierapp.Token.IToken;
 import com.example.philipp.cashierapp.IAddress;
 
 /**

@@ -22,12 +22,27 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations;
+package com.example.philipp.cashierapp.Features.operations.actions;
 
 /**
  *
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public interface IOperationProof extends IProof {
-    
+public enum EActionType {
+    TRANSACTION,
+    BRING_OWN_CUP,
+    BRING_OWN_PLATE;
+
+    public static IAction actionFromString(String name) {
+        switch (name) {
+            case "TRANSACTION":
+                return new TransactionAction();
+            case "BRING_OWN_CUP":
+                return new BringOwnCupAction();
+            case "BRING_OWN_PLATE":
+                return new BringOwnPlateAction();
+            default:
+                return null;
+        }
+    }
 }

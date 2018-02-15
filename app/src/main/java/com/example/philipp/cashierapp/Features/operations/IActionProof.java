@@ -22,40 +22,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp;
-
-import com.example.philipp.cashierapp.operations.actions.IAction;
-import com.example.philipp.cashierapp.operations.IClaim;
-import com.example.philipp.cashierapp.operations.IActionProof;
-
+package com.example.philipp.cashierapp.Features.operations;
 
 /**
  *
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public class StandardClaim implements IClaim{
-
-    
-    IAction action; // performed action
-    IActionProof proof; // proof for action
-
-    public StandardClaim(IAction action, IActionProof proof) {
-        this.action = action;
-        this.proof = proof;
-    }
-    
-    
-    
-    @Override
-    public IAction getAction() {
-       return this.action;
-    }
-
-    @Override
-    public IActionProof getProof() {
-        return this.proof;
-    }
-    
-    
+public interface IActionProof extends IProof{
     
 }

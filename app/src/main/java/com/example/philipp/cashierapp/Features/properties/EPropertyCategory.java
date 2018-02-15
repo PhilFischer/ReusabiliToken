@@ -22,14 +22,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Features.properties;
 
 /**
- * The three feature types making up a Token.
+ *
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public enum FeatureType {
-    UNDERLYING, // gives value to a token
-    PROPERTY, // inherent characteristcs of a token
-    OPERATION // actions, which can be performed by tokens
+public enum EPropertyCategory {
+    Basic,Other
 }

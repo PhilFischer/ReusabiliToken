@@ -1,4 +1,4 @@
-package com.example.philipp.cashierapp.operations.actions;
+package com.example.philipp.cashierapp.Features.operations.actions;
 
 import com.example.philipp.cashierapp.IAddress;
 

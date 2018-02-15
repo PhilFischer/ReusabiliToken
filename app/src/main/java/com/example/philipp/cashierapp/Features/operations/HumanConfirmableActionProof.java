@@ -1,4 +1,4 @@
-package com.example.philipp.cashierapp.operations;
+package com.example.philipp.cashierapp.Features.operations;
 
 import java.security.Signature;
 

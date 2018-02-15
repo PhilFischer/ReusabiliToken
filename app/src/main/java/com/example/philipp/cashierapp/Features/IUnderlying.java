@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Features;
 
 /**
  * Gives value to a Token. I.e. a service, commodity etc.

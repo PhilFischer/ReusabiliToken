@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Token;
 
-import com.example.philipp.cashierapp.IProperty;
-import com.example.philipp.cashierapp.IUnderlying;
+import com.example.philipp.cashierapp.Features.properties.IProperty;
+import com.example.philipp.cashierapp.Features.IUnderlying;
 import com.example.philipp.cashierapp.IAddress;
 import java.util.Map;
-import com.example.philipp.cashierapp.IOperation;
-import com.example.philipp.cashierapp.operations.IClaim;
+import com.example.philipp.cashierapp.Features.IOperation;
+import com.example.philipp.cashierapp.Features.operations.IClaim;
 import java.util.Collection;
 
 /**

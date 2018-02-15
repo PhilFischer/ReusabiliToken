@@ -22,12 +22,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations;
+package com.example.philipp.cashierapp.Features;
 
 /**
- *
+ * The three feature types making up a Token.
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public interface IActionProof extends IProof{
-    
+public enum FeatureType {
+    UNDERLYING, // gives value to a token
+    PROPERTY, // inherent characteristcs of a token
+    OPERATION // actions, which can be performed by tokens
 }

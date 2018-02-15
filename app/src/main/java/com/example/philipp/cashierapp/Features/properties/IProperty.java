@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Features.properties;
 
-import com.example.philipp.cashierapp.IFeature;
+import com.example.philipp.cashierapp.Features.IFeature;
 
 /**
  * Inherent Characteristic of a Token. I.e. name, maximum supply, 

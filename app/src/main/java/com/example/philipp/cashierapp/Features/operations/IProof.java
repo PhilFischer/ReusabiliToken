@@ -22,12 +22,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Features.operations;
 
 /**
- *
+ * Proof of an Action.
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public enum EPropertyCategory {
-    Basic,Other
+public interface IProof {
+    
 }

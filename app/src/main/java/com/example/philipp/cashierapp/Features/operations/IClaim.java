@@ -22,14 +22,27 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations.actions;
+package com.example.philipp.cashierapp.Features.operations;
+
+import com.example.philipp.cashierapp.Features.operations.actions.IAction;
+import com.example.philipp.cashierapp.IAddress;
 
 /**
- *
+ * Represents the claim to a performed action and its proof.
+ * I.e. the action can be a transformed value transaction.
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public enum EActionType {
-    TRANSACTION,
-    BRING_OWN_CUP,
-    BRING_OWN_PLATE
+public interface IClaim {
+    
+    /**
+     * Obtain the performed Action Object.
+     * @return 
+     */
+    IAction getAction();
+    /**
+     * Get Proof for the performed Action.
+     * @return 
+     */
+    IActionProof getProof();
+    
 }

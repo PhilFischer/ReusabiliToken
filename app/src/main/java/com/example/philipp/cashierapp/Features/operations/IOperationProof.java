@@ -22,29 +22,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp.operations;
-
-import com.example.philipp.cashierapp.FeatureType;
-import com.example.philipp.cashierapp.IOperation;
-import com.example.philipp.cashierapp.IRepository;
+package com.example.philipp.cashierapp.Features.operations;
 
 /**
- * Abstract Class for operations. Requires children to store a repository.
+ *
  * @author Mark C. Ballandies <bmark@ethz.ch>
  */
-public abstract class AOperation implements IOperation{
-    
-    protected IRepository repo;
-
-    public AOperation(IRepository repo) {
-        this.repo = repo;
-    }
-    
-    @Override
-    public FeatureType getFeatureType() {
-        return FeatureType.OPERATION;
-    }
-    
-    
+public interface IOperationProof extends IProof {
     
 }

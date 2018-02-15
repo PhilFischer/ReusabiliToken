@@ -34,10 +34,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.example.philipp.cashierapp;
+package com.example.philipp.cashierapp.Features;
 
-import com.example.philipp.cashierapp.operations.IClaim;
-import com.example.philipp.cashierapp.operations.actions.IAction;
+import com.example.philipp.cashierapp.Features.operations.IClaim;
+import com.example.philipp.cashierapp.Features.operations.actions.IAction;
+import com.example.philipp.cashierapp.Token.IToken;
 import java.util.List;
 
 /**
