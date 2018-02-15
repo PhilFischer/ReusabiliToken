@@ -40,19 +40,36 @@ public class SignedStore extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final String ID_FILENAME = "ReusabiliStore";
     public final static int QRcodeWidth = 500;
+    private static long id;
+    private static String privateKey_string;
+    private static String publicKey_string;
+    private static String action_string;
+    private static String address_string;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signed_store);
         Intent intent = getIntent();
-        String id = intent.getStringExtra(MainActivity.STORE_EXTRA_ID);
+        id = intent.getLongExtra("id", 0);
+        String id_string = Long.toString(id);
+        privateKey_string = intent.getStringExtra("privateKey");
+        publicKey_string = intent.getStringExtra("publicKey");
         TextView textView = (TextView) findViewById(R.id.idTextView);
-        textView.setText(id);
+        textView.setText(id_string);
+
+        /*
+        final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, 0);
+        String privateKey_string = sharedPref.getString("KEY1", null);
+        long id = sharedPref.getLong("KEY2", 0);
+        */
     }
 
     public void scanClaim(View view) {
         Intent intent = new Intent(getApplicationContext(), BarcodeCaptureActivity.class);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setVisibility(View.INVISIBLE);
         startActivityForResult(intent, BARCODE_READER_REQUEST_CODE);
     }
 
@@ -74,17 +91,23 @@ public class SignedStore extends AppCompatActivity {
     }
 
     protected void recieveClaim(String barcode_return) {
-        String action_string = barcode_return.split(" ")[0];
-        String address_string = barcode_return.split(" ")[1];
+        action_string = barcode_return.split(" ")[0];
+        address_string = barcode_return.split(" ")[1];
 
         Button approveButton = (Button) findViewById(R.id.approveButton);
         TextView claimView = (TextView) findViewById(R.id.claimName);
         approveButton.setVisibility(View.VISIBLE);
         claimView.setText(action_string);
+    }
 
-        final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, Activity.MODE_PRIVATE);
-        String privateKey_string = sharedPref.getString("KEY1", null);
-        long id = sharedPref.getLong("KEY2", 0);
+    public void approveClaim(View view) {
+        Button approveClaim = (Button) findViewById(R.id.approveButton);
+        TextView claimView = (TextView) findViewById(R.id.claimName);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        approveClaim.setVisibility(View.INVISIBLE);
+        imageView.setVisibility(View.VISIBLE);
+        claimView.setText("");
+
 
         AHumanConfirmableAction action = (AHumanConfirmableAction) EActionType.actionFromString(action_string);
         Address address = new Address(address_string);
@@ -109,7 +132,7 @@ public class SignedStore extends AppCompatActivity {
         }
         catch (Exception e){}
 
-        String qrString = Long.toString(id) + " " + qrSign.toString();
+        String qrString = Long.toString(id) + " " + qrSign.toString() + " " + publicKey_string;
         Bitmap bitmap;
         ImageView iv = (ImageView) findViewById(R.id.imageView);
         try {
@@ -120,13 +143,10 @@ public class SignedStore extends AppCompatActivity {
         }
     }
 
-    public void approveClaim(View view) {
-        Button approveClaim = (Button) findViewById(R.id.approveButton);
-        TextView claimView = (TextView) findViewById(R.id.claimName);
-        approveClaim.setVisibility(View.INVISIBLE);
-        claimView.setText("");
-    }
 
+
+
+    
     private Bitmap TextToImageEncode(String Value) throws WriterException {
         BitMatrix bitMatrix;
         try {
@@ -159,7 +179,5 @@ public class SignedStore extends AppCompatActivity {
 
         bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight);
         return bitmap;
-
-
     }
 }
