@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.philipp.cashierapp.camera.CameraSource;
+
 public class MainActivity extends AppCompatActivity {
     public static final String STORE_EXTRA_ID = "com.example.philipp.cashierapp.MESSAGE";
 
