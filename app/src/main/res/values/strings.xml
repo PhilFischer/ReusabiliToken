@@ -2,6 +2,8 @@
     <string name="app_name">CashierApp</string>
     <string name="sign_in_button">Sign in</string>
     <string name="log_in_button">Log in</string>
+    <string name="scan_button">Scan Claim</string>
+    <string name="approve_button">Approve</string>
     <string name="title_activity_login">Sign in</string>
 
     <string name="claim_label">Claim a Reward</string>

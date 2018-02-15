@@ -19,6 +19,7 @@ import java.security.SecureRandom;
 public class StoreSignIn extends AppCompatActivity {
     private PublicKey publicKey;
     private PrivateKey privateKey;
+    private Boolean stored = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -33,9 +34,9 @@ public class StoreSignIn extends AppCompatActivity {
             KeyPair keyPair = keyGen.generateKeyPair();
             privateKey = keyPair.getPrivate();
             publicKey = keyPair.getPublic();
+            stored = true;
         }
         catch(NoSuchAlgorithmException noSuchAlgorithmException){}
-
 
     }
 
@@ -44,13 +45,6 @@ public class StoreSignIn extends AppCompatActivity {
         EditText editId = (EditText) findViewById(R.id.idView);
         String name = editName.getText().toString();
         long id = Long.parseLong(editId.getText().toString(), 10);
-
-        TextView privateView = (TextView) findViewById(R.id.privateKeyView);
-        TextView publicView = (TextView) findViewById(R.id.publicKeyView);
-        String privateString = new String(privateKey.getEncoded());
-        String publicString = new String(publicKey.getEncoded());
-        privateView.setText(privateString);
-        publicView.setText(publicString);
 
         StoreDatabase storeDatabase = StoreDatabase.getInstance();
         storeDatabase.addStore(id, publicKey);

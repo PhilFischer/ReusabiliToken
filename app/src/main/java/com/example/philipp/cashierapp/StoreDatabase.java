@@ -14,7 +14,7 @@ package com.example.philipp.cashierapp;
  */
 public class StoreDatabase {
 
-    private static StoreDatabase instance = null;
+    private static StoreDatabase instance = new StoreDatabase();
     private HashMap<Long, PublicKey> id_to_pubkey = new HashMap<>();
 
     private StoreDatabase() {
@@ -22,8 +22,6 @@ public class StoreDatabase {
     }
 
     public static StoreDatabase getInstance() {
-        if (instance == null)
-            instance = new StoreDatabase();
         return instance;
     }
 

@@ -3,6 +3,7 @@ package com.example.philipp.cashierapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class SignedStore extends AppCompatActivity {
@@ -15,5 +16,10 @@ public class SignedStore extends AppCompatActivity {
         String id = intent.getStringExtra(MainActivity.STORE_EXTRA_ID);
         TextView textView = (TextView) findViewById(R.id.idTextView);
         textView.setText(id);
+    }
+
+    public void scanClaim(View view) {
+        Intent intent = new Intent(this, StoreLogIn.class);
+        startActivity(intent);
     }
 }
