@@ -75,7 +75,7 @@ public class StoreLogIn extends AppCompatActivity {
 
         else
         {
-            startActivity(new Intent(this, ClaimActivity.class));
+            startActivity(new Intent(this, SignedStore.class));
         }
     }
 

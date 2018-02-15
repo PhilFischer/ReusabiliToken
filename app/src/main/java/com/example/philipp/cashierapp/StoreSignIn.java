@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.SecureRandom;
@@ -18,16 +20,23 @@ public class StoreSignIn extends AppCompatActivity {
     private PrivateKey privateKey;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store_sign_in);
+        SecureRandom random;
+        KeyPairGenerator keyGen;
+        try  {
+            keyGen = KeyPairGenerator.getInstance("DSA", "JDK");
+            random = SecureRandom.getInstance("sharp1ing");
+            keyGen.initialize(256, random);
+            KeyPair keyPair = keyGen.generateKeyPair();
+            privateKey = keyPair.getPrivate();
+            publicKey = keyPair.getPublic();
+        }
+        catch(NoSuchAlgorithmException noSuchAlgorithmException){}
+        catch(NoSuchProviderException e){}
 
-        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("DSA", "JDK");
-        SecureRandom random = SecureRandom.getInstance("SHARP1NG");
-        keyGen.initialize(256, random);
-        KeyPair keyPair = keyGen.generateKeyPair();
-        privateKey = keyPair.getPrivate();
-        publicKey = keyPair.getPublic();
+
     }
 
     public void signIn(View view) {
