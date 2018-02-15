@@ -1,5 +1,6 @@
 package com.example.philipp.cashierapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,7 +27,7 @@ public class StoreSignIn extends AppCompatActivity {
         SecureRandom random;
         KeyPairGenerator keyGen;
         try  {
-            keyGen = KeyPairGenerator.getInstance("DSA", "JDK");
+            keyGen = KeyPairGenerator.getInstance("DSA");
             random = SecureRandom.getInstance("sharp1ing");
             keyGen.initialize(256, random);
             KeyPair keyPair = keyGen.generateKeyPair();
@@ -34,7 +35,6 @@ public class StoreSignIn extends AppCompatActivity {
             publicKey = keyPair.getPublic();
         }
         catch(NoSuchAlgorithmException noSuchAlgorithmException){}
-        catch(NoSuchProviderException e){}
 
 
     }
@@ -49,10 +49,13 @@ public class StoreSignIn extends AppCompatActivity {
         TextView publicView = (TextView) findViewById(R.id.publicKeyView);
         String privateString = new String(privateKey.getEncoded());
         String publicString = new String(publicKey.getEncoded());
-        privateView.setText(privateString);;
+        privateView.setText(privateString);
         publicView.setText(publicString);
 
         StoreDatabase storeDatabase = StoreDatabase.getInstance();
         storeDatabase.addStore(id, publicKey);
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

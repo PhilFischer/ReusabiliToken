@@ -24,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(STORE_EXTRA_ID, id);
         startActivity(intent);
     }
+
+    public void storeSignIn(View view) {
+        Intent intent = new Intent(this, StoreSignIn.class);
+        startActivity(intent);
+    }
 }
