@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.philipp.cashierapp.Tests.DummyReputationToken;
+
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
@@ -47,7 +49,8 @@ public class StoreSignIn extends AppCompatActivity {
         long id = Long.parseLong(editId.getText().toString(), 10);
 
         StoreDatabase storeDatabase = StoreDatabase.getInstance();
-        storeDatabase.addStore(id, publicKey);
+        DummyReputationToken dt = new DummyReputationToken();
+        storeDatabase.addStore(id, publicKey, dt);
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.philipp.cashierapp.barcode.BarcodeCaptureActivity;
+
 public class SignedStore extends AppCompatActivity {
+    private Address address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,11 @@ public class SignedStore extends AppCompatActivity {
     }
 
     public void scanClaim(View view) {
-        Intent intent = new Intent(this, StoreLogIn.class);
+        Intent intent = new Intent(this, BarcodeCaputureActivity.class);
         startActivity(intent);
+    }
+
+    public void approveClaim(View view) {
+
     }
 }

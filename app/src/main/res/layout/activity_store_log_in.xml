@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.philipp.cashierapp.StoreLogIn">
-    <EditText android:id="@+id/enter_Address"
+
+    <EditText
+        android:id="@+id/enter_Address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -16,8 +18,10 @@
         android:text=""
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@id/scan_barcode_button"
-        tools:layout_editor_absoluteX="0dp"/>
-    <Button android:id="@+id/scan_barcode_button"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/scan_barcode_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/enter_Address"
@@ -27,8 +31,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.248"
-        tools:layout_editor_absoluteX="0dp"/>
-    <Button android:id="@+id/save_address"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/save_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/scan_barcode_button"
@@ -39,5 +45,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scan_barcode_button"
         app:layout_constraintVertical_bias="0.041"
-        tools:layout_editor_absoluteX="0dp"/>
+        tools:layout_editor_absoluteX="0dp" />
 </android.support.constraint.ConstraintLayout>

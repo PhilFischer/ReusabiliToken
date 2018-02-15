@@ -4,8 +4,11 @@ package com.example.philipp.cashierapp;
  * Created by Tobias on 14.02.2018.
  */
 
-        import java.security.PublicKey;
-        import java.util.HashMap;
+import java.security.PublicKey;
+import java.util.AbstractMap;
+import java.util.HashMap;
+
+import com.example.philipp.cashierapp.IToken;
 
 /**
  * @brief A Database containing the IDs and public keys of all the stores
@@ -15,7 +18,7 @@ package com.example.philipp.cashierapp;
 public class StoreDatabase {
 
     private static StoreDatabase instance = new StoreDatabase();
-    private HashMap<Long, PublicKey> id_to_pubkey = new HashMap<>();
+    private HashMap<Long, AbstractMap.SimpleEntry<PublicKey, IToken>> id_to_pubkey_token = new HashMap<>();
 
     private StoreDatabase() {
         // Nothing to do here
@@ -25,12 +28,24 @@ public class StoreDatabase {
         return instance;
     }
 
-    public PublicKey getPublicKey(long store_id) {
-        return id_to_pubkey.get(new Long(store_id));
+    public boolean containsStore(long store_id) {
+        return id_to_pubkey_token.containsKey(new Long(store_id));
     }
 
-    public void addStore(long store_id, PublicKey public_key) {
-        id_to_pubkey.put(new Long(store_id), public_key);
+    public PublicKey getPublicKey(long store_id) {
+        if (!id_to_pubkey_token.containsKey(new Long(store_id)))
+            return null;
+        return id_to_pubkey_token.get(new Long(store_id)).getKey();
+    }
+
+    public IToken getReputationToken(long store_id) {
+        if (!id_to_pubkey_token.containsKey(new Long(store_id)))
+            return null;
+        return id_to_pubkey_token.get(new Long(store_id)).getValue();
+    }
+
+    public void addStore(long store_id, PublicKey public_key, IToken reputation_token) {
+        id_to_pubkey_token.put(new Long(store_id), new AbstractMap.SimpleEntry<>(public_key, reputation_token));
     }
 
 }
