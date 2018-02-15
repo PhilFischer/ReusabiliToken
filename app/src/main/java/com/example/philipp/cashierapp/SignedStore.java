@@ -52,6 +52,8 @@ public class SignedStore extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signed_store);
         Intent intent = getIntent();
+
+        //load keys and id from intent
         id = intent.getLongExtra("id", 0);
         String id_string = Long.toString(id);
         privateKey_string = intent.getStringExtra("privateKey");
@@ -59,6 +61,8 @@ public class SignedStore extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.idTextView);
         textView.setText(id_string);
 
+        //load private key from shared preferences
+        //skipped in demo version
         /*
         final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, 0);
         String privateKey_string = sharedPref.getString("KEY1", null);
@@ -146,7 +150,7 @@ public class SignedStore extends AppCompatActivity {
 
 
 
-    
+
     private Bitmap TextToImageEncode(String Value) throws WriterException {
         BitMatrix bitMatrix;
         try {

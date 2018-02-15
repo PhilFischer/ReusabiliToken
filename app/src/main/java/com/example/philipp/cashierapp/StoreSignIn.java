@@ -34,15 +34,8 @@ public class StoreSignIn extends AppCompatActivity {
             keyGen = KeyPairGenerator.getInstance("DSA");
             keyGen.initialize(512);
             KeyPair keyPair = keyGen.generateKeyPair();
+
             privateKey = (PrivateKey) keyPair.getPrivate();
-
-            /*
-            final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, 0);
-            SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putString("KEY2", privateKey.getEncoded().toString());
-            editor.commit();
-            */
-
             TextView tv = (TextView) findViewById(R.id.privateKeyView);
             tv.setText(privateKey.getEncoded().toString());
 
@@ -64,6 +57,9 @@ public class StoreSignIn extends AppCompatActivity {
         DummyReputationToken dt = new DummyReputationToken();
         storeDatabase.addStore(id, publicKey, dt);
 
+
+        //save private key and id as shared preference
+        //skipped in demo version
         /*
         final SharedPreferences sharedPref = getSharedPreferences(ID_FILENAME, 0);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -75,12 +71,10 @@ public class StoreSignIn extends AppCompatActivity {
 
         Intent intent = new Intent(this, SignedStore.class);
 
-        intent.putExtra("privateKey", privateKey.getEncoded().toString());
-
-        //This extra is just for demo version
+        //This intent extra is just for demo version
         //Public key should be sent via decentralized data base
         intent.putExtra("publicKey", publicKey.getEncoded().toString());
-
+        intent.putExtra("privateKey", privateKey.getEncoded().toString());
         intent.putExtra("id", id);
         startActivity(intent);
     }
