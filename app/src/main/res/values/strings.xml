@@ -4,6 +4,19 @@
     <string name="log_in_button">Log in</string>
     <string name="title_activity_login">Sign in</string>
 
+    <string name="claim_label">Claim a Reward</string>
+    <string name="input_adress">Enter Account-Address</string>
+    <string name="scan_address">Scan Address as QR-Code</string>
+    <string name="save_address">Save Address</string>
+
+    <string name="no_barcode_captured">No barcode captured</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
