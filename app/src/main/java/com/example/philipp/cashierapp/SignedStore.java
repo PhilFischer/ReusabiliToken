@@ -73,8 +73,6 @@ public class SignedStore extends AppCompatActivity {
 
     public void scanClaim(View view) {
             Intent intent = new Intent(getApplicationContext(), BarcodeCaptureActivity.class);
-            ImageView imageView = (ImageView) findViewById(R.id.imageView);
-            imageView.setVisibility(View.INVISIBLE);
             startActivityForResult(intent, BARCODE_READER_REQUEST_CODE);
     }
 
@@ -97,7 +95,7 @@ public class SignedStore extends AppCompatActivity {
         }
         catch(Exception e)
         {
-            Toast.makeText(getApplicationContext(), "Something went wrong or false QR-Code scanned!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Something went wrong, maybe false QR-Code scanned!", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -105,19 +103,22 @@ public class SignedStore extends AppCompatActivity {
         action_string = barcode_return.split(" ")[0];
         address_string = barcode_return.split(" ")[1];
 
+        if(!checkAddress(address_string))
+            throw new IllegalArgumentException("Address invalid!");
+
         Button approveButton = (Button) findViewById(R.id.approveButton);
         TextView claimView = (TextView) findViewById(R.id.claimName);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setImageResource(R.drawable.storeicon);
         approveButton.setVisibility(View.VISIBLE);
         claimView.setText(action_string);
     }
 
     public void approveClaim(View view) {
         Button approveClaim = (Button) findViewById(R.id.approveButton);
-        TextView claimView = (TextView) findViewById(R.id.claimName);
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         approveClaim.setVisibility(View.INVISIBLE);
         imageView.setVisibility(View.VISIBLE);
-        claimView.setText("");
 
 
         AHumanConfirmableAction action = (AHumanConfirmableAction) EActionType.actionFromString(action_string);
@@ -190,5 +191,34 @@ public class SignedStore extends AppCompatActivity {
 
         bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight);
         return bitmap;
+    }
+
+    private boolean checkAddress(String address)
+    {
+        if(address == null)
+            return false;
+        String eth="ethereum:";
+        String hexsig, number;
+        boolean length = address.length()==42 || address.length()== 51;
+        if(!(address.length()==51)) {
+            hexsig = address.substring(0, 2);
+            number = address.substring(2);
+        }
+        else{
+            eth = address.substring(0,9);
+            hexsig = address.substring(9, 11);
+            number = address.substring(11);
+        }
+        boolean ethsig = eth.toLowerCase().contains(new String("ethereum:"));
+        boolean ishex = hexsig.toLowerCase().contains(new String("0x"));
+        boolean asciichar = true;
+        for (char character : number.toCharArray()) {
+            int code = (int) character;
+            if(!((code >= 48 && code <= 57) || (code >= 65 && code <= 70) || (code >= 97 && code <= 102)))
+                asciichar = false;
+        }
+
+
+        return (length && asciichar && ishex && ethsig);
     }
 }
